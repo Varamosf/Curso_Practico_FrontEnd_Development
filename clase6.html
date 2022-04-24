@@ -29,6 +29,71 @@
         font-family: "Quicksand", sans-serif;
         margin: 0;
       }
+
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+
+      .product-card {
+        width: 240px;
+      }
+
+      .product-card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+
+      .product-info figure {
+        margin: 0;
+      }
+
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+
+      .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--very-light-pink);
+      }
+
+      @media (max-width: 640px) {
+        .cards-container {
+          grid-template-columns: repeat(auto-fill, 140px);
+        }
+
+        .product-card {
+          width: 140px;
+        }
+
+        .product-card img {
+          width: 140px;
+          height: 140px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+      }
     </style>
   </head>
   <body>
@@ -40,13 +105,15 @@
             alt="Keyboard image"
             class="product-image"
           />
-          <div>
-            <p>$150.00 USD</p>
-            <p>Keyboard</p>
+          <div class="product-info">
+            <div>
+              <p>$150.00 USD</p>
+              <p>Keyboard</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -55,13 +122,15 @@
             alt="Mouse image"
             class="product-image"
           />
-          <div>
-            <p>$110.00 USD</p>
-            <p>Mouse</p>
+          <div class="product-info">
+            <div>
+              <p>$110.00 USD</p>
+              <p>Mouse</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -70,13 +139,15 @@
             alt="Headphones image"
             class="product-image"
           />
-          <div>
-            <p>$200.00 USD</p>
-            <p>Headphones</p>
+          <div class="product-info">
+            <div>
+              <p>$200.00 USD</p>
+              <p>Headphones</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -85,13 +156,15 @@
             alt="Laptop image"
             class="product-image"
           />
-          <div>
-            <p>$1,800.00 USD</p>
-            <p>Laptop</p>
+          <div class="product-info">
+            <div>
+              <p>$1,800.00 USD</p>
+              <p>Laptop</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -100,13 +173,15 @@
             alt="Tablet image"
             class="product-image"
           />
-          <div>
-            <p>$900.00 USD</p>
-            <p>Tablet</p>
+          <div class="product-info">
+            <div>
+              <p>$900.00 USD</p>
+              <p>Tablet</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -115,13 +190,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -130,13 +207,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -145,13 +224,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -160,13 +241,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -175,13 +258,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -190,13 +275,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -205,13 +292,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -220,13 +309,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -235,13 +326,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -250,13 +343,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -265,13 +360,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -280,13 +377,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -295,13 +394,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -310,13 +411,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
 
         <div class="product-card">
@@ -325,13 +428,15 @@
             alt=""
             class="product-image"
           />
-          <div>
-            <p>$120.00 USD</p>
-            <p>Bike</p>
+          <div class="product-info">
+            <div>
+              <p>$120.00 USD</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
+            </figure>
           </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon" />
-          </figure>
         </div>
       </div>
     </section>
